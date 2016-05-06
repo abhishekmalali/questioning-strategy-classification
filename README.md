@@ -3,7 +3,7 @@ Repository for AM207 final project for finding the optimal method of asking ques
 
 
 Important Notebooks 
-
+-------------------
 
 1) MC_posterior.ipynb - This notebook uses PyMC to recover separate confusion matrices for every worker from the generated data. We only attempted this for the Multiclass case in this notebook.
 
@@ -23,7 +23,9 @@ This notebook also contains all the code for generating the visualizations in th
 
 
 
-Other Notebooks - 
-1. simulated-annealing-mc.ipynb - This notebook has an attempt at running Simulated annealing in an constrained enviroment. We assume we know the confusion matrix(Assume it to be near identity matrix) and the class distribution. This was an initial starting attempt at solving the class inference problem using the Simulated annealing approach.
+Other Notebooks 
+---------------
 
-2. simulated-annealing-multiple-c-mc.ipynb - This notebook has an attempt at Simulated annealing to recover the individual confusion matrix instead of the shared confusion matrix. This is to determine the workers with bad labeling performance. Simulated annealing does not converge to a solution since the space in which it is searching grows by separating the confusion matrices, making it much harder for Simulated annealing to converge to a global or in this case even the local maximum.
+1) simulated-annealing-mc.ipynb - This notebook has an attempt at running Simulated annealing in an constrained enviroment. We assume we know the confusion matrix(Assume it to be near identity matrix) and the class distribution. This was an initial starting attempt at solving the class inference problem using the Simulated annealing approach.
+
+2) simulated-annealing-multiple-c-mc.ipynb - This notebook has an attempt at Simulated annealing to recover the individual confusion matrix instead of the shared confusion matrix. This is to determine the workers with bad labeling performance. Simulated annealing does not converge to a solution since the space in which it is searching grows by separating the confusion matrices, making it much harder for Simulated annealing to converge to a global or in this case even the local maximum.
