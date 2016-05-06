@@ -2969,7 +2969,7 @@
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			background-image: linear-gradient(45deg, #4fa49a, #4361c2);
+			/*background-image: linear-gradient(45deg, #4fa49a, #4361c2);*/
 			content: '';
 			height: 100%;
 			left: 0;
