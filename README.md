@@ -19,7 +19,7 @@ Important Notebooks
  * Expectation Maximization for Multiclass data with a shared confusion matrix
  * Expectation Maximization for Multiclass data with separate confusion matrices for each worker
  * Expectation Maximization for Yes/No data with separate confusion matrices for each worker
-This notebook also contains all the code for generating the visualizations in the paper and poster, which are side-by-side comparisons for the various methods.  
+ * This notebook also contains all the code for generating the visualizations in the paper and poster, which are side-by-side comparisons for the various methods.  
 
 
 
