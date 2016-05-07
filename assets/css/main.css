@@ -2729,12 +2729,28 @@
 			background-size: auto,cover;
 		}
 
+		.main.style4 {
+			background-color: #22262b;
+			color: rgba(255, 255, 255, 0.75);
+			background-attachment: fixed, fixed;
+			/*background-image: url("../../images/pica06.jpg"), url("../../images/pic08.jpg");*/
+			background-size: auto,cover;
+		}
+
 		.main.style3 {
 			background-attachment: fixed;
 			background-image: url("images/lion.png");
 			background-size: auto,cover;
 
 		}
+		.main.style4 h2 {
+			color: #EEE
+		}
+
+		.main.style4 h3 {
+			color: #AEE
+		}
+
 		.main.style3 h2 {
 			color: #EEE
 		}
