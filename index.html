@@ -98,6 +98,33 @@
 		</div>
 	</section>
 
+	<section id="two" class="main style1">
+		<div class="container">
+			<div class="row 150%">
+				<div class="12u 12u$(medium)">
+					<header class="major">
+						<h2>First, we have to generate the data. </h2>
+			</header>
+			<p>We began with a confusion matrix Θ<sup>(j)</sup> per worker, where the rows represent the true class labels and the columns the predicted labels. So each element in this <em>K x K</em> matrix is the probability of predicting class k<sub>1</sub> indicated by the column, when the true class is k<sub>2</sub>. To generate each Θ<sup>(j)</sup>, we took an identity matrix of size K and added a bias term over the entire matrix, and then normalized over the rows. This puts the most weight along the diagonal, which is intuitive because we would expect that a worker predicts the correct class most often. We also generated true classes, using a categorical distribution. We determined the true label <em>y<sub>n</sub></em> on item n by pulling class k with probability <em>λ<sub>k</sub></em>.</p>
+			<div style="text-align:center"><img style="width:60%" src="images/mc_mat.png"/></div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row 150%">
+		<div class="6u 12u$(medium)">
+			<h3 style="font-size:40px;text-align:center;letter-spacing:7px">MULTICLASS PARADIGM</h3>
+			<p>From the confusion matrices and true labels, we generated the data as a <em>N × J × K</em> size matrix <em>R</em>. <em>r<sub>njk</sub></em> = 1 when a worker <em>j</em> predicts class <em>k</em> on item <em>n</em>, and <em>r<sub>njk</sub></em> = 0 otherwise for that same worker on the same item.
+</p>
+		</div>
+		<div class="6u$ 12u$(medium)">
+			<h3 style="font-size:40px;text-align:center;letter-spacing:7px">YES-NO PARADIGM</h3>
+			<p>In the Yes-No case, our data matrix size becomes <em>N × J × K × 2</em>. Now, for each worker <em>j</em> on item <em>n</em>, <em>rnjk0</em> = 1, <em>rnjk1</em> = 0 if they answered no on the question regarding class <em>k</em>, and <em>rnjk0</em> = 0, <em>rnjk1</em> = 1 if they answered yes. We have two binary values for each question rather than a single one (where 0 is no and 1 is yes) because in the event that a worker does not answer a question on an item, it will not affect the likelihood, because both <em>rnjk0</em> and <em>rnjk1</em> will be 0.</p>
+		</div>
+	</div>
+</div>
+</section>
+
 	<!-- Three -->
 	<section id="three" class="main style1 special">
 		<div class="container">
@@ -132,7 +159,6 @@
 	</section>
 
 	<!-- Four -->
-	<div class="transparent">
 	<section id="four" class="main style3 special">
 		<div class="container">
 			<header class="major">
@@ -143,8 +169,8 @@
 				<li><a href="https://github.com/abhishekmalali/questioning-strategy-classification" class="button special">Github link</a></li>
 			</ul>
 		</div>
-	</section>
-</div>
+</section>
+
 
 	<!-- Five -->
 	<!--

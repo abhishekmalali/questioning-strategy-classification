@@ -18,6 +18,9 @@
 	border: solid #999 4px;
 	text-align: center;
 }
+.transparent {
+	background-color: rgba(250, 250, 250, 0.4);
+}
 
 /* Reset */
 
@@ -2730,8 +2733,14 @@
 			background-attachment: fixed;
 			background-image: url("images/lion.png");
 			background-size: auto,cover;
-		}
 
+		}
+		.main.style3 h2 {
+			color: #EEE
+		}
+		.main.style3 p {
+			color: #ccc
+		}
 			.main.style2 a {
 				border-bottom-color: rgba(255, 255, 255, 0.5);
 			}
